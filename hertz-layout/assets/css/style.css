@@ -1,0 +1,159 @@
+body {
+    background-image: url("https://image.flaticon.com/icons/png/128/752/752399.png");
+    background-repeat: repeat-y;
+    background-color: #2a2a2a;
+}
+
+hr {
+    background-color: #6c757d;
+}
+
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: -5px;
+    background: #000;
+    height: 4px;
+    transition-property: left right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+    right: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-expand-lg {
+        -ms-flex-flow: row nowrap;
+        flex-flow: column !important;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        font-size: x-large;
+    }
+}
+
+.bgimg-parallax {
+    position: relative;
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-parallax {
+    background-image: url('https://images.pexels.com/photos/159376/turntable-top-view-audio-equipment-159376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    min-height: 400px;
+}
+
+.carousel-caption-2 {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.marketing {
+    text-align: center;
+}
+
+.jumbotron-heading {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.navbar-brand-2 {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar-brand-2 {
+        display: none;
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+}
+
+.card.promo .preco-vitrine:before {
+    content: 'por apenas ';
+    display: block;
+    color: lightslategray;
+    position: relative;
+    font-weight: lighter;
+    font-size: 0.65em;
+}
+
+.badge.badge-pill.badge-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.9em;
+    padding: 5px 10px;
+}
+
+.badge-info {
+    color: #fff;
+    background-color: #17a2b8;
+}
+
+.carousel-indicators.indicators-mais-vendidos,
+.carousel-indicators.indicators-mais-procurados {
+    bottom: -50px !important;
+}
+
+[data-target="#carrosselMaisVendidos"]:not(.active),
+[data-target="#carrosselMaisProcurados"]:not(.active) {
+    background-color: #17a2b85c !important;
+}
+
+#catMaisVendidos .card.promo,
+#catMaisProcurados .card.promo {
+    order: -1;
+    /* Traz os cards com classe promo (nas "vitrines especiais") para as primeiras posições (afinal, o default é 0). Só funciona por que estamos usando flex box */
+}
+
+.card.promo {
+    color: #17a2b8;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
